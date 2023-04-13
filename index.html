@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Codificador com JavaScript</title>
+</head>
+
+<body>
+    <main class="container">
+
+
+        <img src="./assets/logo-alura.png" alt="logo-alura" class="logo">
+
+
+        <div class="inputArea">
+            <textarea name="msg" id="msg" placeholder="Digite seu texto"></textarea>
+            <div class="infoDiv">
+                <img src="./assets/info-icon.svg" alt="info-icon" class="infoIcon">
+                <p> Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="butDiv">
+                <button id="criptoBut" onclick={encriptMsg()}>Criptografar</button>
+                <button id="decriptBut" onclick={decriptMsg()}>Descriptografar</button>
+            </div>
+        </div>
+
+        <div class="outputArea">
+            <div class="boxText">
+                <textarea id="outText" disabled></textarea>
+                <button id="copy" onclick={copiarTexto()}>Copiar</button>
+            </div>
+            <div class="cont1">
+                <img src="./assets/wait-fig.svg" alt="waiting" class="wait">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<script src="./script/script.js"></script>
+
+</html>
